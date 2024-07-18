@@ -1,9 +1,5 @@
 Personal repository for code from study machine learning
 
-Reference from books(pdf) in books folder
-
-some code in the book is outdated, but all code in this repository is updated and work fine as of july 2024
-
 all the .csv file used came from:
 
 diabetes.csv
