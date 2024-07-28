@@ -1,0 +1,46 @@
+Pearson Correlation Coefficient
+
+According to Gemini :
+
+What is it?
+
+The Pearson correlation coefficient is a statistical measure that quantifies the linear relationship between two continuous variables. It ranges from -1 to 1:
+
+    -1: Perfect negative correlation (as one variable increases, the other decreases linearly)
+    0: No correlation (no linear relationship between the variables)
+    1: Perfect positive correlation (as one variable increases, the other increases linearly)
+
+How is it calculated?
+
+The formula for the Pearson correlation coefficient (r) is quite complex, but it essentially involves:
+
+    Calculating the means of both variables (X and Y).
+    Calculating the standard deviations of both variables.
+    Calculating the covariance between X and Y, which measures how much X and Y vary together.
+    Dividing the covariance by the product of the standard deviations of X and Y.
+
+Assumptions of Pearson Correlation
+
+    Linearity: The relationship between the variables is linear.
+    Normality: Both variables are normally distributed.
+    Outliers: The data should not contain extreme outliers, as they can significantly impact the correlation coefficient.
+
+When to use Pearson Correlation
+
+    When you want to measure the strength and direction of the linear relationship between two continuous variables.
+    When the data meets the assumptions of linearity, normality, and no outliers.
+
+Example
+
+Imagine you have a dataset of people with their heights and weights. You can calculate the Pearson correlation coefficient to determine if there is a linear relationship between height and weight. A positive correlation would indicate that taller people tend to weigh more.
+Limitations
+
+    Only measures linear relationships: It doesn't capture non-linear relationships between variables.
+    Sensitive to outliers: Extreme values can significantly affect the correlation coefficient.
+
+Visual Representation
+รูปภาพscatter plots with different correlation coefficientsเปิดในหน้าต่างใหม่
+www.researchgate.net
+scatter plots with different correlation coefficients
+
+In conclusion, the Pearson correlation coefficient is a valuable tool for understanding the relationship between two continuous variables, but it's important to consider its assumptions and limitations when interpreting the results.
