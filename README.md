@@ -1,4 +1,5 @@
-Personal repository for code from study machine learning
+Personal repository for code from machine learning study
+(code from machine learning mastery with python book)
 
 all the .csv file used came from:
 
