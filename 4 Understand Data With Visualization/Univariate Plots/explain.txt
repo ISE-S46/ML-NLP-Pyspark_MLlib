@@ -1,0 +1,78 @@
+1. Histogram Plot
+Step-by-Step Breakdown:
+
+    Data Loading:
+        read_csv(filename, names=names, skiprows=1) loads the dataset as before, with custom column names and skipping the first row.
+
+    Histogram Plotting:
+        data.hist() creates a histogram for each numerical column in the DataFrame.
+            Histogram: A histogram is a graphical representation of the distribution of a dataset. It groups data into bins (intervals) and counts how many data points fall into each bin.
+            Visualization: Each column's data is plotted separately, showing the frequency of values within certain ranges.
+
+    Display the Plot:
+        pyplot.show() renders the histograms.
+
+Purpose and Usage:
+
+    Why Histograms?
+        Understanding Distribution: Histograms help in visualizing the distribution of each variable. They provide insights into the central tendency (mean, median), spread (range, variance), 
+        and the shape of the distribution (skewness, modality).
+        Identifying Outliers: Unusual peaks or gaps in a histogram can indicate outliers or data issues.
+        Checking Normality: In many statistical methods, the assumption is that the data is normally distributed. Histograms provide a quick visual check.
+
+2. Density Plot (Kernel Density Estimation)
+Step-by-Step Breakdown:
+
+    Data Loading:
+        read_csv(filename, names=names, skiprows=1) loads the dataset with specified names and skips the first row.
+
+    Density Plotting:
+        data.plot(kind='density', subplots=True, layout=(3,3), sharex=False) creates a density plot for each numerical column.
+            Density Plot (KDE): A density plot is a smoothed, continuous version of a histogram, generated using a technique called Kernel Density Estimation (KDE). 
+            It shows the probability density function of the variable, providing a more detailed view of the data distribution.
+            Subplots: subplots=True means each column’s density plot will be drawn on a separate subplot.
+            Layout: layout=(3,3) organizes these subplots in a 3x3 grid.
+            X-axis Sharing: sharex=False means each subplot will have its own x-axis, allowing for different ranges if needed.
+
+    Display the Plot:
+        pyplot.show() renders the density plots.
+
+Purpose and Usage:
+
+    Why Density Plots?
+        Smooth Distribution Visualization: Density plots provide a clearer picture of the distribution, especially when the underlying data is continuous. Unlike histograms, 
+        they do not depend on bin size and can reveal more subtle features in the data.
+        Comparing Distributions: They are useful for comparing the distribution shapes of different features and identifying modes (peaks).
+        Checking Normality: Like histograms, density plots help in assessing whether the data follows a normal distribution or if it is skewed, multimodal, etc.
+
+3. Box Plot (Box-and-Whisker Plot)
+Step-by-Step Breakdown:
+
+    Data Loading:
+        read_csv(filename, names=names, skiprows=1) loads the data with specified column names, skipping the first row.
+
+    Box Plotting:
+        data.plot(kind='box', subplots=True, layout=(3,3), sharex=False, sharey=False) generates box plots for each numerical column.
+            Box Plot: A box plot displays the distribution of data based on five summary statistics: minimum, first quartile (Q1), median, third quartile (Q3), and maximum. It also highlights potential outliers.
+            Subplots: subplots=True means each feature’s box plot is drawn on a separate subplot.
+            Layout: layout=(3,3) organizes the subplots into a 3x3 grid.
+            X-axis and Y-axis Sharing: sharex=False and sharey=False indicate that each subplot has its own axis, allowing for different scales.
+
+    Display the Plot:
+        pyplot.show() renders the box plots.
+
+Purpose and Usage:
+
+    Why Box Plots?
+        Understanding Spread and Outliers: Box plots are particularly useful for visualizing the spread and skewness of data. The presence of outliers is easily detectable as points outside the "whiskers."
+        Comparing Distributions: Box plots make it easy to compare the distribution and spread of multiple variables side-by-side.
+        Detecting Symmetry and Skewness: If the median line inside the box is closer to one end, it indicates skewness. A symmetric box plot (median in the center) suggests a symmetric distribution.
+
+Summary of All Three Plots:
+
+    Histogram: Provides a simple visualization of the distribution of each feature, useful for understanding the general shape and spread.
+    Density Plot: Offers a smoothed version of the histogram, providing more detailed insights into the distribution, especially useful for continuous data.
+    Box Plot: Summarizes the distribution of each feature, highlighting spread, central tendency, and outliers, essential for comparing distributions and detecting anomalies.
+
+All three plots are key components of Exploratory Data Analysis (EDA), helping you to understand the structure, distribution, and characteristics of your dataset before proceeding to more advanced modeling 
+or analysis steps.
