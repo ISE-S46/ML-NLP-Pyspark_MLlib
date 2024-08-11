@@ -39,7 +39,7 @@ Limitations
     Sensitive to outliers: Extreme values can significantly affect the correlation coefficient.
 
 Visual Representation
-รูปภาพscatter plots with different correlation coefficientsเปิดในหน้าต่างใหม่
+scatter plots with different correlation coefficientsเปิดในหน้าต่างใหม่
 www.researchgate.net
 scatter plots with different correlation coefficients
 
