@@ -2,7 +2,7 @@ from pandas import read_csv
 from numpy import set_printoptions # allows you to set the number of decimal places, the precision, the threshold for printing arrays, and other formatting options.
 from sklearn.preprocessing import MinMaxScaler # transforming the data so that the minimum value becomes 0 and the maximum value becomes 1
 
-filename = 'D:\Important_Data\Code\diabetes.csv'
+filename = 'diabetes.csv'
 names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
 dataframe = read_csv(filename, names=names, skiprows=1) # setting skiprows=1, telling Pandas to start reading the data from the second row onwards
 array = dataframe.values

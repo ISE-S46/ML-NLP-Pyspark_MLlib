@@ -2,7 +2,7 @@
 from pandas import read_csv
 from sklearn.decomposition import PCA
 # load data
-filename = 'D:\Important_Data\Code\diabetes.csv'
+filename = 'diabetes.csv'
 names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
 dataframe = read_csv(filename, names=names, skiprows=1) 
 array = dataframe.values

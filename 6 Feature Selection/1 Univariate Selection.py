@@ -4,7 +4,7 @@ from numpy import set_printoptions
 from sklearn.feature_selection import SelectKBest
 from sklearn.feature_selection import chi2
 # load data
-filename = 'D:\Important_Data\Code\diabetes.csv'
+filename = 'diabetes.csv'
 names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
 dataframe = read_csv(filename, names=names, skiprows=1) # setting skiprows=1, telling Pandas to start reading the data from the second row onwards
 array = dataframe.values

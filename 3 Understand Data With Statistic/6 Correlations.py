@@ -2,7 +2,7 @@ from pandas import read_csv
 from pandas import set_option
 from pandas import options
 
-filename = 'D:\Important_Data\Code\diabetes.csv'
+filename = 'diabetes.csv'
 names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
 data = read_csv(filename, names=names, skiprows=1)
 set_option('display.width', 100)
