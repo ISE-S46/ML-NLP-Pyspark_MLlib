@@ -1,7 +1,7 @@
 from pandas import read_csv
 from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import Ridge
 
 filename = 'BostonHousing.csv'
 names = ['crim', 'zn', 'indus', 'chas', 'nox', 'rm', 'age', 'dis', 'rad', 'tax', 'ptratio','b', 'lstat', 'medv']
@@ -10,12 +10,12 @@ array = dataframe.values
 X = array[:,0:13]
 Y = array[:,13]
 kfold = KFold(n_splits=10, shuffle=True, random_state=7)
-model = LinearRegression()
+model = Ridge()
 scoring = 'neg_mean_squared_error'
 results = cross_val_score(model, X, Y, cv=kfold, scoring=scoring)
-print("MSE: %.3f (%.3f)" % (results.mean(), results.std()))
+print(results.mean())
 
-# Output
+#output
 '''
-MSE: -23.747 (11.143)
+-23.88989018505341
 '''

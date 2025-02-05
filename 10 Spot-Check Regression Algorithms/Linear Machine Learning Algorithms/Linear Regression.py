@@ -13,9 +13,9 @@ kfold = KFold(n_splits=10, shuffle=True, random_state=7)
 model = LinearRegression()
 scoring = 'neg_mean_squared_error'
 results = cross_val_score(model, X, Y, cv=kfold, scoring=scoring)
-print("MSE: %.3f (%.3f)" % (results.mean(), results.std()))
+print(results.mean())
 
 # Output
 '''
-MSE: -23.747 (11.143)
+-23.74650181131339
 '''

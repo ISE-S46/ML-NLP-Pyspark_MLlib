@@ -3,7 +3,7 @@ from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 from sklearn.linear_model import LinearRegression
 
-filename = 'D:\Important_Data\Code\BostonHousing.csv'
+filename = 'BostonHousing.csv'
 names = ['crim', 'zn', 'indus', 'chas', 'nox', 'rm', 'age', 'dis', 'rad', 'tax', 'ptratio','b', 'lstat', 'medv']
 dataframe = read_csv(filename, names=names, skiprows=1)
 array = dataframe.values
